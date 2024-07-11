@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application files to the container
-COPY . .
+COPY . /app/
 
 # Expose the necessary port
 EXPOSE 8000
