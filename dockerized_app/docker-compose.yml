@@ -7,7 +7,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-     - /home/ubuntu/shared_data:/app/app/data
+     - /home/ubuntu/docker-fastapi-test/dockerized_app/shared_data:/app/app/data
     restart: always
 
 
