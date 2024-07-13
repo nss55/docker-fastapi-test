@@ -1,0 +1,20 @@
+global:
+  scrape_interval: 2s
+scrape_configs:
+ - job_name: prometheus
+   static_configs:
+    - targets:
+       - prometheus:9090
+
+
+ - job_name: docker
+   scrape_interval: 5s
+   static_configs:
+    - targets:
+       - 43.205.114.183:9323
+
+ - job_name: python_app
+   scrape_interval: 5s
+   static_configs:
+    - targets:
+       - 43.205.114.183:8000
